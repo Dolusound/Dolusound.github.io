@@ -26,7 +26,7 @@ export default {
           description: 'Active Noise Cancellation. 22 hour battery life.'
         },
         {
-          title: 'Work with all your devices',
+          title: 'Works with all your devices',
           description:
             'Apple W1 chip & Class 1 wireless Bluetooth® + removable 8.5mm cable.'
         }
@@ -38,13 +38,14 @@ export default {
 <style lang="scss" scoped>
 .specs {
   display: grid;
-  grid-template-columns: 500px 500px;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  row-gap: 50px;
-  column-gap: 70px;
+  row-gap: 100px;
+  column-gap: 200px;
 
   @media (max-width: $screen-lg) {
     grid-template-columns: 1fr;
+    row-gap: 50px;
   }
 }
 

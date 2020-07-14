@@ -42,8 +42,12 @@ export default {
 .product {
   position: relative;
   width: 100%;
-  margin-bottom: 60px;
+  margin-bottom: 100px;
   text-align: center;
+
+  @media (max-width: $screen-md) {
+    margin-bottom: 60px;
+  }
 
   &__cta {
     margin: auto;
