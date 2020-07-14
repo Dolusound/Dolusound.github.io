@@ -8,7 +8,11 @@ export default {
   name: 'ChevronDown',
   methods: {
     scrollDown() {
-      window.scrollTo(0, window.innerHeight + 20)
+      window.scroll({
+        top: window.innerHeight + 20,
+        left: 0,
+        behavior: 'smooth'
+      })
     }
   }
 }
@@ -16,12 +20,7 @@ export default {
 <style lang="scss" scoped>
 .chevron-down {
   animation: pulse 2s 1.5s ease-out infinite;
-  position: absolute;
-  bottom: 4vh;
-  left: 0;
-  right: 0;
   text-align: center;
-  z-index: 10;
 
   img {
     animation: fade-slide-up 1s 0.5s ease-out forwards;
