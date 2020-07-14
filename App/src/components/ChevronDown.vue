@@ -9,7 +9,7 @@ export default {
   methods: {
     scrollDown() {
       window.scroll({
-        top: window.innerHeight + 20,
+        top: window.innerHeight + 100,
         left: 0,
         behavior: 'smooth'
       })
